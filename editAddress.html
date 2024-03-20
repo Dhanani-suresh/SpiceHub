@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiceHub</title>
+    <link rel="stylesheet" href="editPages.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Edit Details</h2>
+        <form id="editForm">
+            <label for="houseNo">House No:</label>
+            <input type="text" id="houseNo" required><br>
+            <label for="street">Street:</label>
+            <input type="text" id="street" required><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" required><br>
+            <input type="button" id = "save" value="Save">
+        </form>
+    </div>
+
+    <script>
+        document.querySelector('#save').addEventListener('click', function() {
+            // Get the edited details from the form
+            const houseNo = document.getElementById('houseNo').value;
+            const street = document.getElementById('street').value;
+            const city = document.getElementById('city').value;
+
+            // Combine the details into the desired format
+            const formattedAddress = `${houseNo} - ${street} - ${city}`;
+            // Send the edited details back to the parent window
+            parent.postMessage({ fieldId: "billingAddress", value: formattedAddress }, "*");
+
+        });
+
+
+    </script>
+</body>
+</html>

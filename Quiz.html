@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Quiz </title>
+		<link rel="stylesheet" href="Quiz.css" >
+		<link rel="stylesheet" href="External.css" >
+    </head>
+	
+    <body>
+        
+		<header class="navbar">
+
+			<div class="logo">
+				<img src="logo.png" alt="Logo" >
+				<span class="logoname">SpiceHub</span>
+			</div>
+       
+			<ul class="nav-links">
+				<li><a class="active" href="index.html">HOME</a></li>
+				<li><a href="userfeedback.html">QUERY</a></li>
+				<li><a href="Cart.html">SHOP</a></li>
+				<li><a class="active" href="Quiz.html">QUIZ</a></li>
+				<li><a href="AboutUs.html">ABOUT US</a></li>
+			</ul>
+        
+		</header>
+		
+        <div class="relative">
+            <div class="group">
+                <div id="status" class="A"></div>
+				<div id="timer" class="B1"> Quiz Time "60 s" starts now </div>
+                <div id="question" class="question"></div>
+                <div id="answers"></div>
+                <button id="nextButton" class="on" disabled> Next Question </button>
+				
+            </div>
+        </div>
+
+		<div id="resultModal" class="modal">
+            <div class="modal-content">
+                <p class="one"> Congratulations, Quiz Completed! </p>
+                <div class="two">
+                    <p id="1"></p>
+                    <p id="2"> 2 </p>
+                    <p id="3"> 3 </p>
+                    <p id="4"> 4 </p>
+                    <p id="5"> 5 </p>
+                    <p id="6"> 6 </p>
+                    <button onclick="refreshPage()" class="onn"> Start Again </button>
+                </div>
+            </div>
+        </div>
+		
+		<button class="pageEdit">
+            <a href="PageEditor.html"> <b> Page Editor</b> </a>
+        </button>
+        <div class = "footer">
+
+            <a href = "Food.html" class = "BackToTop">Back to top ↑</a>
+            <br>
+                 
+            <img src = "Logo/Spice_Hub.png" alt = "logo" id = "logo_f">
+            <img src = "Logo/facebook.png" alt = "facebook logo" id = "facebook">
+            <img src = "Logo/instagram.png" alt  = "instagram logo" id = "instagram">
+            <img src = "Logo/twitter.png" alt = "twitter logo" id = "twitter" >
+              
+            <div class = "meetdevs"> 
+              <p id = "FooterHeader1">MEET THE DEVELOPMENT TEAM</p>
+              <ul id = "DevNames">
+                <li><a href = "udeshvinojpgediter.html">Udeshvinoj Rajamanikkam</a></li>
+                <li><a href = "PageEditor.html">Thangaraja Hashanthini</a></li>
+                <li><a href = "dhanani.html">Dhanani Sundaram</a></li>
+              </ul>
+            </div>
+            <div class = "Contact">
+              <p id = "FooterHeader2">CONTACT US</p>
+                <ul id = "ContactList">
+                  <li id = "tele">TELE : 0332276510</li>
+                  <li id = "email">EMAIL : Travelwithus@gmail.com</li>
+                  <li id = "location">57, Ramakrishna Road,<br> 
+                  Colombo 06,<br> Sri Lanka</li>
+                </ul>
+              </div>
+          </div>
+          
+
+        <script src="Quiz.js"></script>
+    </body>
+</html>

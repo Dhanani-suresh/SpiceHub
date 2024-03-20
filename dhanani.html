@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=\, initial-scale=1.0" >
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>SpiceHub</title>
+    <link rel="stylesheet" href="dhanani.css">
+    <link rel="stylesheet" href="External.css">
+  </head>
+  <body>
+    <header class="navbar">
+
+      <!-- Logo -->
+     <div class="logo">
+       <img src="logo/Spice_Hub.png" alt="Logo" >
+       <span class="logoname">SpiceHub</span>
+     </div>
+ 
+     <!-- Navigation section -->
+       <ul class="nav-links">
+           <li><a class="active" href="Food.html">HOME</a></li>
+           <li><a href="#">QUERY</a></li>
+           <li><a href="Cart.html">SHOP</a></li>
+           <li><a href="#">QUIZ</a></li>
+           <li><a href="#">ABOUT US</a></li>
+       </ul>
+       
+    </header>
+    <div class="container">
+      <div class="card">
+        <div class="card-bio">
+          <div class="img-wrapper">
+            <img src="Images/profilepic.jpg" alt="Profile Picture">
+          </div>
+          <div class="person-info">
+            <h3>Dhanani Sundaram</h3>
+            <p><strong>Student Role 1</strong></p>
+          </div>
+          <button class="card-btn">
+            <span class="card-btn-contact">View Tasks</span>
+            <i class="fas fa-angle-up"></i>
+          </button>
+        </div>
+        <div class="card-contact">
+          <h4>View Tasks</h4>
+        </div>
+        <div class="task one">
+          <div class="icon-wrapper">
+            <i class="fas fa-tv fa-2xs"></i>
+          </div>
+          <div class="contact-details">
+            <a href="Presentation.html">
+              <h4>Presentation Page</h4>
+              <p>Created a presentation page with the title and names of the team members, using time splash screen effects</p>
+            </a>
+          </div>
+        </div>
+        <div class="task two">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+          <div class="contact-details">
+            <a href="Cart.html">
+              <h4>Buy Products Page</h4>
+              <p>Created a products page to allow user to buy dishes from our website.</p>
+            </a>
+          </div>
+        </div>
+        <div class="task three">
+            <div class="icon-wrapper">
+                <i class="fas fa-sack-dollar"></i>
+            </div>
+            <div class="contact-details">
+              <a href="payments.html">
+                <h4>Payment Page</h4>
+                <p>Created a form to collect customers personal details to allow an online order to be placed.</p>
+              </a>
+            </div>
+          </div>
+        <div class="task four">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-bowl-food"></i>
+          </div>
+          <div class="contact-details">
+            <a href="Food.html">
+              <h4>Content Page - Food</h4>
+              <p>Created a food page with a description some of the most popular non-vegeterian dishes in the Indian Cuisine.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        document.querySelector(".card-btn").addEventListener("click", () => {
+        document.querySelector(".container").classList.toggle("change");
+       });
+    </script>
+  </body>
+</html>

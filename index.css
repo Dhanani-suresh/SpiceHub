@@ -1,0 +1,143 @@
+UTILITIES 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+li{
+    list-style: none;
+}
+
+
+
+/* HERO SECTION */
+
+
+.hero {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bg-img.jpg);
+
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  color:rgb(254,161,21);
+}
+.tag {
+    background-color:rgb(254,161,21);
+    padding: 8px;
+    color: black;
+    align-self: flex-start;
+    text-align: center;
+}
+  
+.hero_content h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.explore_btn {
+    background: rgb(254,161,21);
+    align-self: flex-start;
+    padding: 10px;
+    border-color: rgb(254,161,21);
+    color:#fff;
+}
+.hero_image{
+    float: left;
+    animation: imgRotate 50s linear infinite;
+    
+
+}
+
+@keyframes imgRotate { 
+    100%{ 
+        transform: rotate(360deg); 
+    } 
+}
+
+
+/* Menu Section */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+    background-color: rgb(35,31,28);
+   
+}
+.menu .tag {
+    align-self: center;
+    color:#fff
+}
+.menu.h2{
+    text-align: center;
+}
+  
+.grid-image {
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    width: 90%;
+    height: 70%;
+}
+
+
+.grid-image:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+
+}
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "I1 I2 I3";
+    width: 80%;
+}
+.grid h3{
+    color: black;
+    font-size: 1.5rem;
+    text-align:center;
+    background-color:rgb(254,161,21);
+    padding: 8px;
+    color: black;
+    align-self: flex-start;
+    width: 90%;
+
+}
+
+  
+.item1 {
+    grid-area: I1;
+}
+.item2 {
+    grid-area: I2;
+}
+.item3 {
+    grid-area: I3;
+}
+ 
+
+  

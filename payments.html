@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="payment.css">
+        <link rel="stylesheet" href="External.css">
+        <title>SpiceHub</title>
+    
+    </head>
+    <body>
+        <header class="navbar">
+            <div id="top"></div>
+    
+            <!-- Logo -->
+           <div class="logo">
+             <img src="logo/Spice_Hub.png" alt="Logo" >
+             <span class="logoname">SpiceHub</span>
+           </div>
+       
+           <!-- Navigation section -->
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+				<li><a href="userfeedback.html">QUERY</a></li>
+				<li><a class="active" href="Cart.html">SHOP</a></li>
+				<li><a href="Quiz.html">QUIZ</a></li>
+				<li><a href="AboutUs.html">ABOUT US</a></li>
+            </ul>
+             
+        </header>
+        <div class="container">
+    
+            <form>
+                <div class="payment-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-item">
+                        <span>Total Items:</span>
+                        <span id="itemCountDisplay"></span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Total Price:</span>
+                        <span id="totalPriceDisplay"></span>
+                    </div>
+                </div>
+        
+                <div class="row">
+        
+                    <div class="col">
+        
+                        <h3 class="title">Personal Details</h3>
+        
+                        <div class="inputBox">
+                            <span>Full name :</span>
+                            <input type="text" id = "name" placeholder="Your fullname" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>Email :</span>
+                            <input type="email" id = "email" placeholder="Your email address" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>address :</span>
+                            <input type="text" id="billingAddress" placeholder="House No - Street - City" required readonly>
+                            <iframe id="editAddressIframe" src="editPage.html" style="display: none;"></iframe>
+                            <div class="buttonContainer"> <!-- Add a container for the edit button -->
+                                <button class="editButton" onclick="redirectToEditPage('billingAddress')">Edit</button>
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <span>Contact Details :</span>
+                            <input type="text" id="contactDetails" placeholder="Phone / Email" required readonly>
+                            <iframe id="editContactIframe" src="editContactsPage.html" style="display: none;"></iframe>
+                            <div class="buttonContainer"> <!-- Add a container for the edit button -->
+                                <button class="editButton" onclick="redirectToEditPage('contactDetails')">Edit</button>
+                            </div>
+                        </div>
+        
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>NIC :</span>
+                                <input type="text" placeholder="Your NIC number" required>
+                            </div>
+                            <div class="inputBox">
+                                <span>zip code :</span>
+                                <input type="text" placeholder="xxx xxx" minlength="6" maxlength="6" required>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="col">
+        
+                        <h3 class="title">Payment</h3>
+        
+                        <div class="inputBox">
+                            <span>cards accepted :</span>
+                            <img src="images/card_img.png" alt="">
+                        </div>
+                        <div class="inputBox">
+                            <span>Name on card :</span>
+                            <input type="text" placeholder="Name on card" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>credit card number :</span>
+                            <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx" minlength="16" maxlength="16" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>exp month :</span>
+                            <input type="month" name="date" id="date" min="2025-01" max="2025-12" required>
+                        </div>
+        
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>Exp year :</span>
+                                <input type="number" placeholder="year of expiry" min="2022" max="2030" required>
+                            </div>
+                            <div class="inputBox">
+                                <span>CVV :</span>
+                                <input type="text" placeholder="xxxx" minlength="4" maxlength="4" required>
+                            </div>
+                        </div>
+        
+                    </div>
+            
+                </div>
+
+                <div class="buttonContainer">
+                    <input type="reset" value="Reset Page" class="reset-btn">
+                    <input type="submit" value="proceed to checkout" class="submit-btn">
+                </div> 
+            </form>
+        
+        </div>
+        <div class="editor">
+            <a href="dhanani.html">
+              <h3>Page editor</h3>
+            </a>
+        </div>
+        <div class = "footer">
+
+            <a href = "#top" class = "BackToTop">Back to top ↑</a>
+             <br>
+               
+            <img src = "Logo/Spice_Hub.png" alt = "logo" id = "logo_f">
+            <img src = "Logo/facebook.png" alt = "facebook logo" id = "facebook">
+            <img src = "Logo/instagram.png" alt  = "instagram logo" id = "instagram">
+            <img src = "Logo/twitter.png" alt = "twitter logo" id = "twitter" >
+            
+            <div class = "meetdevs"> 
+                <p id = "FooterHeader1">MEET THE DEVELOPMENT TEAM</p>
+                <ul id = "DevNames">
+                    <li><a href = "UdeshvinojRajamanikkam.html">Udeshvinoj Rajamanikkam</a></li>
+                    <li><a href = "ThangarajaHashanthini.html">Thangaraja Hashanthini</a></li>
+                    <li><a href = "dhanani.html">Dhanani Sundaram</a></li>
+                </ul>
+            </div>
+            <div class = "Contact">
+                <p id = "FooterHeader2">CONTACT US</p>
+                <ul id = "ContactList">
+                    <li id = "tele">TELE : 0332276510</li>
+                    <li id = "email">EMAIL : Travelwithus@gmail.com</li>
+                    <li id = "location">57, Ramakrishna Road,<br> 
+                            Colombo 06,<br> Sri Lanka</li>
+                </ul>
+            </div>
+        </div>
+        
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const totalPrice = urlParams.get('totalPrice');
+            const itemCount = urlParams.get('itemCount');
+            const name = urlParams.get('name');
+            const email = urlParams.get('email');
+            const formattedAddress = urlParams.get('formattedAddress');
+            const formattedContact = urlParams.get('formattedContact');
+        
+            // Display the total price and item count in the new section
+            document.getElementById('itemCountDisplay').textContent = itemCount;
+            document.getElementById('totalPriceDisplay').textContent = `Rs. ${Number(totalPrice).toLocaleString()}`;
+            // Fill the input boxes with the name and email
+            document.getElementById('name').value = name;
+            document.getElementById('email').value = email;
+            
+            if (formattedAddress) {
+                    document.getElementById('billingAddress').value = formattedAddress;
+            }
+            if (formattedContact) {
+                 document.getElementById('contactDetails').value = formattedContact;
+            }
+        
+            function redirectToEditPage(fieldId) {
+            // Hide both iframes initially
+            document.getElementById("editAddressIframe").style.display = "none";
+            document.getElementById("editContactIframe").style.display = "none";
+        
+            const fieldValue = document.getElementById(fieldId).value;
+            let editPageURL;
+        
+            if (fieldId === "billingAddress") {
+                editPageURL = `editAddress.html?field=${fieldValue}`;
+                document.getElementById("editAddressIframe").src = editPageURL;
+                // Show only the editAddressIframe when the billing address edit button is clicked
+                document.getElementById("editAddressIframe").style.display = "block";
+            } else {
+                editPageURL = `editContacts.html?field=${fieldValue}`;
+                document.getElementById("editContactIframe").src = editPageURL;
+                // Show only the editContactIframe when the contact details edit button is clicked
+                document.getElementById("editContactIframe").style.display = "block";
+            }
+            }
+        
+            window.addEventListener("message", function(event) {
+            if (event.data && event.data.fieldId && event.data.value) {
+                // Update the respective input field with the edited details
+                if (event.data.fieldId === "billingAddress") {
+                    document.getElementById("billingAddress").value = event.data.value;
+                } else if (event.data.fieldId === "contactDetails") {
+                    document.getElementById("contactDetails").value = event.data.value;
+                }
+        
+                // Hide the respective iframe after receiving the edited details
+                if (event.data.fieldId === "billingAddress") {
+                    document.getElementById("editAddressIframe").style.display = "none";
+                } else if (event.data.fieldId === "contactDetails") {
+                    document.getElementById("editContactIframe").style.display = "none";
+                }
+            }
+            });
+        </script>
+    </body>
+
+</html>

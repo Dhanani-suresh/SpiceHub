@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiceHub</title>
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="editPages.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Details</h2>
+        <form id="editForm">
+            <label for="contactno">Your contact number:</label>
+            <input type="tel" id="contactNo" minlength="10" maxlength="10"  required><br>
+            <label for="Alternativenumber">Another contact number:</label>
+            <input type="tel" id="altNo" minlength="10" maxlength="10" required><br>
+            <input type="button" id = "save" value="Save">
+        </form>
+    </div>
+
+    <script>
+        document.querySelector('#save').addEventListener('click', function() {
+            // Get the edited details from the form
+            const contactNo = document.getElementById('contactNo').value;
+            const altNo = document.getElementById('altNo').value;
+
+            const formattedContact = `${contactNo} / ${altNo}`;
+            parent.postMessage({ fieldId: "contactDetails", value: formattedContact }, "*");
+
+        });
+
+    </script>
+</body>
+</html>

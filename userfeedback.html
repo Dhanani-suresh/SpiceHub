@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUERY</title> 
+
+    <!-- CUSTOM CSS FILE LINK -->
+    <link rel="stylesheet" href="External.css">
+    <link rel="stylesheet" href= "userfeedback.css">
+    <script src="userfeedback.js"></script>
+
+</head>
+
+<body>
+   <!-- Header section -->
+
+   <header class="navbar">
+
+    <!-- Logo -->
+   <div class="logo">
+     <img src="logo/SpiceHub.png" alt="Logo" >
+     <span class="logoname">SpiceHub</span>
+   </div>
+
+   <!-- Navigation section -->
+     <ul class="nav-links">
+        <li><a class="active" href="index.html">HOME</a></li>
+		<li><a href="userfeedback.html">QUERY</a></li>
+		<li><a href="Cart.html">SHOP</a></li>
+		<li><a href="Quiz.html">QUIZ</a></li>
+		<li><a href="AboutUs.html">ABOUT US</a></li>
+     </ul>
+     
+   </header>
+      <!-- Query Form-->
+   <br>
+   <div class="h-name">
+   <h2>Give Us Feedback</h2>  
+   <br>
+    <h3 >Fill all the information and please press " View query " button to view form  , before submiting.</h3>
+   </div>
+    <div class="display-query" id="display-query" >
+    <div class="whole-form" id="wholeform">
+        <Form id="form" name="formQuery" action="mailto:hasmalee.20220033@iit.ac.lk" method="post"  enctype="text/plain" class="form-contain">
+            <div class="form-main" id="queryForm">
+
+            <div class="row">
+                <div class="col-25">
+                <label for="fullname"><b> Full Name </b></label><br>
+                </div>
+                <div class="col-75">
+                <input type="text" name="fullname" id="fullname" placeholder="Enter your fullname"><br>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-25">
+                <label for="email"><b>Email</b></label><br>
+                </div>
+                <div class="col-75">
+                <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
+                </div>
+              </div>
+                
+            <div class="row">
+                <div class="col-25">
+                <label for="query"><b>Type your message</b></label><br>
+                </div>
+                <div class="col-75">
+                <textarea name=" query " id="query" rows="3" cols="20"
+                          placeholder="Enter your Query details:"></textarea><br><br>
+                </div>
+            </div>
+                
+                
+            <div class="row">
+                <div class="col-25">
+                <label ><b>Rate</b></label><br>
+                </div>
+                <div class="col-75"> 
+                    <br><b> ⭐⭐⭐⭐ </b><br>
+               <input type="radio" name="rate" id="rating_1" value="1"  > 1 star <br> 
+               <input type="radio" name="rate" id="rating_2" value="2" > 2 star <br> 
+               <input type="radio" name="rate" id="rating_3" value="3" > 3 star <br>
+               <input type="radio" name="rate" id="rating_4" value="4" > 4 star <br><br>    
+
+              <button type="button" onclick=" checkButton()"> Submit </button> 
+    
+
+              <script>
+              function checkButton() {  
+              var getSelectedValue = document.querySelector( 
+                'input[name="rate"]:checked'); 
+              
+              if(getSelectedValue != null) { 
+                document.getElementById("disp").innerHTML 
+                    = getSelectedValue.value 
+                    + " Rate is selected"; 
+              } 
+              else { 
+                 document.getElementById("error").innerHTML 
+                    = "*You have not selected any star"; 
+              } 
+              }  
+    
+             </script>         
+                
+              </div>
+         </div>         
+                
+           
+                
+         
+                <input type="button" value="Confirm" name="check-btn" id="check-btn" onclick="checkbtn()"  >
+                <input type="button" value="View Query" name="view-btn" id="view-btn" onclick="validateform()">
+            </div>
+          
+
+            <div class="right-text" id="display-text">
+                <h3 class="q-head">QUERY</h3>
+                <span id="names"></span><br>
+                <span id="emails"></span><br>
+                <span id="subjects"></span><br>
+                <span id="querys"></span><br>
+                <span id="rates"></span><br>
+                
+
+                <input type="submit" value="Send" name="send-btn" id="send-btn"  >
+                  
+            
+                <input type="button" value="Edit" name="check-btn" id="edit-btn" onclick="editbtn()">
+            </div>
+        </Form>
+    </div>
+  </div>
+    
+    
+    
+    
+    
+    
+<br><br><br><br><br><br><br><br><br>
+    
+  
+    
+      
+<!-- Reviews Section -->  
+    
+<h2 id="cr">customer reviews</h2>
+<br>
+<div class="slider owl-carousel">
+  <div class="card">
+    <div class="img"><img src="images/profile1.png" alt=""></div>
+    <div class="content">
+      <div class="title"> Briana Tozour</div>
+      <div class="sub-title">very satisfied😃</div>
+      <p>
+        What a hidden gem! SpiceHub exceeded all my expectations. As a vegetarian, I often struggle to find restaurants that offer creative and flavorful plant-based options.Even my non-vegetarian friends were blown away by the taste. The staff was incredibly accommodating to dietary preferences and made sure we had a fantastic time. The cozy ambiance and excellent service made for a memorable evening I'm already looking forward to my next visit!".
+      </p>
+      <div class="btn">
+        
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="img"><img src="images/profile2.png" alt=""></div>
+    <div class="content">
+      <div class="title">tom serri</div>
+      <div class="sub-title">satisfied😊</div>
+      <p>
+        I had the most amazing dining experience at SpiceHub. From the moment I stepped in, I was greeted with warmth and professionalism. The ambiance was cozy and inviting, perfect for a relaxing evening. The menu offered a diverse selection of dishes, and I chose the etli, which was an absolute delight! The flavors were well-balanced, and the presentation was top-notch.
+      </p>
+      <div class="btn">
+       
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="img"><img src="images/profile3.png" alt=""></div>
+    <div class="content">
+      <div class="title">Edverd suhu</div>
+      <div class="sub-title">very satisfied😃</div>
+      <p>
+        I recently visited SpiceHub with a group of friends, and overall, it was a pleasant experience. The restaurant had a trendy and modern atmosphere that instantly caught my eye. We tried a variety of dishes, and while some were exceptional, others were just average. The standout for me was the poori, which was bursting with unique flavors. The service was good, but there were a couple of moments when we had to wait longer than expected.
+      </p>
+      <div class="btn">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class = "footer">
+
+  <a href = "userfeedback.html" class = "BackToTop">Back to top ↑</a>
+  <br>
+       
+  <img src = "Logo/Spice_Hub.png" alt = "logo" id = "logo_f">
+  <img src = "Logo/facebook.png" alt = "facebook logo" id = "facebook">
+  <img src = "Logo/instagram.png" alt  = "instagram logo" id = "instagram">
+  <img src = "Logo/twitter.png" alt = "twitter logo" id = "twitter" >
+    
+  <div class = "meetdevs"> 
+    <p id = "FooterHeader1">MEET THE DEVELOPMENT TEAM</p>
+    <ul id = "DevNames">
+      <li><a href = "udeshvinojpgediter.html">Udeshvinoj Rajamanikkam</a></li>
+      <li><a href = "PageEditor.html">Thangaraja Hashanthini</a></li>
+      <li><a href = "dhanani.html">Dhanani Sundaram</a></li>
+    </ul>
+  </div>
+  <div class = "Contact">
+    <p id = "FooterHeader2">CONTACT US</p>
+      <ul id = "ContactList">
+        <li id = "tele">TELE : 0332276510</li>
+        <li id = "email">EMAIL : Travelwithus@gmail.com</li>
+        <li id = "location">57, Ramakrishna Road,<br> 
+        Colombo 06,<br> Sri Lanka</li>
+      </ul>
+    </div>
+</div>
+      
+    
+</body>
+</html>

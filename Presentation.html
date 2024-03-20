@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SpiceHub</title>
+  <meta http-equiv="refresh" content="4; url=index.html"> 
+  <link href="https://fonts.googleapis.com/css?family=Alex%20Brush" rel="stylesheet">
+  <style>
+    body {
+        background-image:url("images/cover.png");
+        background-size: 100%;
+    }
+
+    #splash {
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #restaurant-name {
+      font-family: sans-serif, cursive;
+      font-style: italic;
+      font-size: 130px;
+      color: #dc770c;
+      text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+      margin-top: 80px;
+      margin-bottom: -30px;
+    }
+
+    #slogan {
+      font-size: 35px;
+      font-weight: bold;
+      font-style: italic;
+      color:goldenrod;
+      text-shadow: 0 0 25px #000, 0 0 25px #000, 0 0 25px #000, 0 0 25px #000;
+      margin-top: 20px;
+      margin-bottom: 60px;
+
+    }
+
+    #teamTitle {
+      font-family: 'Alex Brush';
+      font-size: 80px;
+      color: #7f7f7f;
+      text-shadow:  0 0 25px #000, 0 0 25px #000, 0 0 25px #000, 0 0 25px #000;
+      margin-bottom: 20px;
+    }
+    .team {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .team-member {
+      font-weight: bold;
+      font-style: italic;
+      font-size: 20px;
+      color: #2a2a2a;
+      width: 400px;
+      margin: 5px;
+      padding: 10px;
+      background-color:#a9a9a9;
+      border-radius: 10px;
+    }
+    #teamTitle, #restaurant-name,  #slogan, .team-member{
+      opacity: 0; /* Set initial opacity to 0 */
+      animation: fade-in 2s ease-in-out forwards; /* Apply the fade-in animation */
+    }
+    
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+  
+</head>
+<body>
+  <div id="splash">
+    <h1 id="restaurant-name">SpiceHub</h1>
+    <p id="slogan">Flavours that make you go "Mmm"!</p>
+    <h2 id="teamTitle">Our Team</h2>
+    <div class="team">
+        <div class="team-member">Udeshvinoj Rajamanickam</div>
+        <div class="team-member">Dhanani Sundaram</div>
+        <div class="team-member">Hashanthini Thangaraja</div>
+      </div>>
+  </div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+/* feedback.html and form content */
+body {
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/back-img.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  backdrop-filter:blur(2px);
+
+}
+.title-bar-2{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to bottom, rgb(202, 202, 202),rgb(255, 255, 255));
+}
+
+.h-name{
+  text-align: center;
+  color: rgb(254,161,21);
+}
+/* Form content */
+.display-query{
+    border-radius: 5px;
+    background-image:url('images/feedback2.png') ;
+    padding: 50px;
+    width: 750px;
+    height: 725px;
+    margin-top: 12%;
+    margin-left: 35%;
+    box-sizing: border-box;
+    margin: auto;
+    position:relative;  
+    top: 130px;
+}
+
+.form-main{
+    margin-left: 30%;
+
+}
+/* Popup message */
+.right-text{
+    display:none;
+    height: 350px;
+    width: 345px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px 50px;
+    margin: auto;
+    border-radius: 5px;
+}
+.q-head{
+    text-align: center;
+}
+
+
+/* Input text fields */
+input[type=text],
+input[type=email]{
+    height: 22px;
+    border-radius: 4px;
+    margin: 7px;
+    margin-left: 30px;
+    background: #ffffff;
+    width: 120%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+select{
+    width: 125%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+    margin: 7px;
+    margin-left: 30px;
+    background: #ffffff;
+}
+
+textarea {
+    width: 120%;
+    height: 170px;
+    padding: 12px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    resize: none;
+    margin-left: 30px;
+}
+/* Buttons */
+input[type=button],
+input[type=submit] {
+    background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin: 50px 20px;
+  font-weight: bold;
+  position: sticky;
+
+}
+
+input[type=button]:hover,
+input[type=submit]:hover {
+    background-color: #106d72;
+    color: rgb(255, 255, 255);
+    transition: 1s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    
+}
+
+
+
+#send-btn,
+#edit-btn{
+    margin: 70px 10px ;
+
+}
+
+.col-25 {
+    float: left;
+    width: 40%;
+    margin-top: 6px;
+    color: white;
+    margin-left: -110px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 60%;
+    margin-top: 6px;
+
+  }
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    
+  }
+  label:hover{
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  }
+
+  #logo {
+     margin-right: 100%;
+    width: 350px;
+    top :50px;
+}
+  
+ .BackToTop{
+    color:#000000;
+    text-decoration: none;
+}
+
+.BackToTop:hover{
+    color:#1a8e94;
+}
+ 
+  
+/*review section*/
+#cr {
+  text-align: center;
+  color:rgb(254,161,21) ;
+}
+.slider{
+    max-width: 1100px;
+    display: flex;
+    margin: 0 auto;
+  }
+  .slider .card{
+    flex: 1;
+    margin: 0 10px;
+    background: #fff;
+    margin-bottom: 80px;
+  }
+  .slider .card .img{
+    height: 200px;
+    width: 100%;
+  }
+  .slider .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .slider .card .content{
+    padding: 10px 20px;
+  }
+  .card .content .title{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .card .content .sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+  }
+  .card .content p{
+    text-align: justify;
+    margin: 10px 0;
+  }
+  .card .content .btn{
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+  }
+  .card .content .btn button{
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .card .content .btn button:hover{
+    transform: scale(0.9);
+  }
+
+  
+

@@ -1,0 +1,113 @@
+
+body {
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/bg2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  backdrop-filter:blur(2px);
+
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  /* fix alignment issue */
+  margin: 10px 20px;
+}
+.card {
+  width: 45%;
+  height: auto;
+  max-height:max-content;
+  margin-top: 60px;
+  padding: 10px; 
+  border-radius: 90px;
+  background: linear-gradient(45deg, white, rgb(254,161,21));
+
+  transition: box-shadow 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 60%;
+  border-radius: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card h1 {
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 30px;
+  margin: 20px;
+  color: maroon;
+  animation: fadeInUp 2s ease;
+}
+
+.card p {
+  font-style: italic;
+  font-size: 18px;
+  color:black;
+  line-height: 1.5;
+  margin-bottom: -150px;
+  text-align: center;
+
+}
+.sidenav{
+  padding: 2px;
+  margin-top: 50px;
+  margin-left: 20px;
+  background-color:rgb(254,161,21);
+  opacity: 80%;
+  height: 25px;
+  width: 750px;
+  border-radius: 20px;
+}
+
+.sidenav a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: maroon;
+}
+
+.sidenav a:hover {
+  color: #8b8b8b;
+}
+
+.editor {
+  padding: auto;
+  background-color: rgb(254,161,21);
+  width: 10%;
+  margin-left: 86%;
+  border-radius: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.editor:hover ,.editor a:hover {
+  background-color: black;
+  color:  rgb(254,161,21);
+}
+
+.editor a {
+  text-decoration: none;
+  color: black;
+}  
+

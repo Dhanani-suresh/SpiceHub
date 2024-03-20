@@ -1,0 +1,161 @@
+.group {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+	padding-bottom: 20px;
+	padding-left: 48px;
+	padding-right: 48px;
+	background-color: lightgreen;
+	border-radius: 25px/45px;
+	width: 600px;
+	margin: 0 auto;
+	margin-right: 10px; 
+	margin-bottom: 90px;
+	}
+.question {
+	border: 2px solid black;
+	padding: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	font-weight: bold;
+}
+.answer {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+button.on {
+	background-color: #281e5d;
+	color: white;
+	border-radius: 5px;
+	border: solid #281e5d;
+	cursor: pointer;
+	margin: 5px auto;
+	padding: 10px;
+}
+button.off {
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	border: solid black;
+	cursor: pointer;
+	margin: 5px auto;
+	padding: 10px;
+}
+.A {
+	display: flex;
+}
+.B {
+	margin: 0px auto;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+B1 {
+        margin: 0px auto;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-bottom: 15px;
+}
+
+.C {
+	background-color: white;
+}
+.correct {
+  background-color: green;
+}
+
+.incorrect {
+  background-color: red;
+}
+.relative {
+	position: relative;
+	top: 50px;
+	right: 450px;
+}
+body {
+	margin: 0px;
+	background-image: url(background.jpg);
+	background-size: cover;
+}
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+	background-color: #1D2951;
+	margin: 100px auto;
+	padding:20px;
+	border: 1px solid #888;
+	width: 50%;
+	border-radius: 25px;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.one {
+	text-align: center;
+	font-size: 30px;
+	color: white;
+}
+
+.two {
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+
+button.onn {
+	background-color: #1D2951;
+	color: white;
+	border-radius: 5px;
+	border: 2px solid white;
+	cursor: pointer;
+	margin: 5px auto;
+	padding: 10px;
+}
+
+.redword {
+	color: red;
+}
+
+.greenword {
+	color: green;
+}
+
+button.pageEdit {
+	margin-top: 40px;
+	margin-left: 1100px;
+	margin-bottom: 20px;
+	background-color:#ff751a;
+	border-radius: 10px;
+	border-color:#ffffff;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 15px;
+}  

@@ -1,0 +1,88 @@
+body {
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/back-img.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  backdrop-filter:blur(2px);
+
+}
+  .row {
+    display: flex;
+    justify-content: space-between;
+    /* fix alignment issue */
+    margin: 10px 20px;
+  }
+  .card {
+    width: 45%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 20px;
+    background: linear-gradient(45deg,white,rgb(254,161,21));
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .card h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .card p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .sidenav{
+    margin-left: 20px;
+    background-color: #000000;
+    opacity: 80%;
+    height: 25px;
+    width: 550px;
+    border-radius: 20px;
+  }
+
+  .sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  .sidenav a:hover {
+    color: #8b8b8b;
+  }
+  
+
+  .editor {
+    background-color: #fff;
+    padding: 5px;
+    width: 10%;
+    margin-left: 86%;
+    border-radius: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .editor:hover ,.editor a:hover {
+    background-color: #000000;
+    color: white;
+  }
+
+  .editor a {
+    text-decoration: none;
+    color: #000000;
+  }

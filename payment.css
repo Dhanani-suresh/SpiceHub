@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .8s linear;
+}
+body{
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/bg2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  backdrop-filter:blur(2px);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: linear-gradient(45deg, rgb(236, 68, 68), grey);
+  transition: 2s linear;
+  border-radius: 30px;
+  border: 5px solid black;
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:black;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid grey;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn,.container form .reset-btn {
+  width: 48%;
+  padding:12px;
+  font-size: 17px;
+  color:#000;
+  margin-top: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.container form .buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.container form .reset-btn{
+  background: maroon;
+  margin-right: 2%;
+  color: white;
+}
+.container form .submit-btn{
+  background-color:#1C1F25;
+  color:white;
+
+}
+
+
+.container form .submit-btn:hover,.container form .reset-btn:hover {
+  transform: scale(1.05);
+}
+.payment-summary {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.payment-summary h3 {
+  margin-bottom: 10px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+/* Style for the edit iframes */
+iframe#editAddressIframe, iframe#editContactIframe {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 500px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Style for the edit buttons */
+.buttonContainer {
+    text-align: right;
+    margin-top:10px;
+}
+
+.editButton {
+    cursor: pointer;
+    background-color: maroon;
+    color: #fff;
+    padding: 4px;
+    border: none;
+    border-radius: 20px;
+}
+
+.editor {
+  padding: auto;
+  background-color:  maroon;
+  width: 10%;
+  margin-left: 86%;
+  border-radius: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.editor:hover ,.editor a:hover {
+  background-color: black;
+  color:white;
+}
+
+.editor a {
+  text-decoration: none;
+  color:black;
+}

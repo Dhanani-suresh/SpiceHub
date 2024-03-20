@@ -1,0 +1,178 @@
+/* UTILITIES */
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+        
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+li{
+    list-style: none;
+}
+  
+
+
+/* Navigation section */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color :gray;
+    color: #fff;
+    height: 50px;
+    
+}
+   
+.nav-links{
+    display: flex;
+    gap: 2em;
+    font-size: 19px; 
+}   
+
+.nav-links li{
+    padding: 5px 14px; 
+    list-style: none;
+
+}
+
+
+.nav-links a { 
+    color:black;
+      
+}
+
+.nav-links li:hover{
+    background-color:rgb(254,161,21);
+    transition: 0.3s ease;
+    padding: 12px;
+    
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+.logoname {
+    font-size: 30px;
+    color: rgb(254,161,21);
+    font-weight: bold  
+}
+
+
+
+/*footer section*/
+
+body{
+    margin :0;
+    font-family: 'PT sans' , sans-serif;
+    font-style: normal;
+    line-height: 20px;
+   
+}
+.footer{
+    position: relative;
+    width : 100%;    
+    height : 300px;
+    background-color: gray;
+   
+   
+}
+
+#logo_f{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-color: #fff;
+    margin-left: 120px
+}
+
+
+
+
+#facebook{
+    position : absolute;
+    width: 35px;
+    height: 35px;
+    top :200px;
+    left :105px;
+}
+#instagram {
+    position : absolute;
+    width : 35px;
+    height : 35px;
+    top : 200px;
+    left : 157px;
+}
+#twitter {
+    position : absolute;
+    width : 35px;
+    height : 35px;
+    top : 200px;
+    left : 209px;
+}
+
+.meetdevs
+{
+    position : absolute;
+    left : 500px;
+    top:  70px;
+    padding: 7px 20px;
+
+   
+   
+}
+#DevNames li{
+    min-width: 500px;
+    list-style-image: url(images/codingdev.png);
+    font-size:15px ;
+    padding-bottom:12px;
+    
+}
+
+
+#DevNames li a:hover {
+    text-decoration: underline;
+}
+
+.FooterHeaders{
+    font-size: 1.2rem;
+}
+
+.Contact{
+    position : absolute;
+    left : 1090px;
+    top:  70px;
+
+}
+#ContactList li{
+    padding-bottom : 13px;
+    
+}
+#tele{
+    list-style-image: url(images/telephone-call.png);
+}
+#email{
+    list-style-image: url(images/email.png);
+}
+#location{
+    list-style-image: url(images/place.png);
+}
+#devby{
+    position:absolute;
+    bottom:0px;
+    left:60px;
+}
+#devby a {
+    text-decoration: none;
+}
+
